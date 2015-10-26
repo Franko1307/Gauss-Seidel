@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!-- Nombre: FECG-Matrices.html -->
+<!-- Autor: Francisco Enrique Cordova Gonzalez -->
+<!-- Fecha: 24/10/2015 -->
+<!-- Descripción: Este programa usa Gauss-Seidel para resolver un sistema de ecuaciones y transforma matrices a diagonalmente dominante utilizando intercambio de renglones siempre que se pueda.-->
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>FECG-MatricesGaussianaconPivoteoParcial</title>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/mathjs/2.2.0/math.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+	<script src="http://brcdn.org/RbDt4b0Shej4JLF7KBQEilNbIiI.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/2.2.0/math.min.js"></script>
+	<script type="text/javascript"
+		src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+	</script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src = "FECG-Matrices.js">
+</script>
+	</head>
+	<body>		
+		<header id="header">
+			<div class="innertube">
+			<h1>Programa que lee una matriz y utiliza Gauss-seidel para resolverla.</h1>
+			</div>
+		</header>
+		<div id="wrapper">
+			<div id="ERRORES"></div>
+			<div id="innertube">
+				<ul>
+					<li>
+						<label for = "Max-Iteraciones">\(Orden\,de\,la\,Matriz(n):\)</label>
+						<input type = "text" id = "orden" value = "3">
+					</li>
+					<li>
+						<label for = "AritmeticaRedondeo">\(Valor\,de\,redondeo:\)</label>
+						<input type = "text" id = "redondeo" value = "5">
+					</li>
+					<li>
+						<label for = "tolerancia">\(Tolerancia(\%):\)</label>
+						<input type = "text" id = "tolerancia" value = "2">
+					</li>
+					<li>
+						<label for = "Errores">\(Repeticiones\,de\,eliminación\,de\,errores\,de\,redondeo:\)</label>
+						<input type = "text" id = "Errores" value = "15">
+					</li>
+					<li>
+						<label for = "Archivo">\(Seleccione\,un\,archivo.\)</label>
+						<input type="file" id="fileInput">
+						<pre id="fileDisplayArea"><pre>
+					</li>
+					<li>
+						<button type = "button" id = "ordenar" value = "ordenar">resolver</button>
+					</li>
+				</ul>
+			</div>
+			<div id="content">
+				<div id = "formato"></div>
+				<div id = "matrices"></div>
+				<div id = "vectores"></div>
+				
+			</div>
+		</div>
+		<footer id="footer">
+			<div id = "info">Programa hecho por Francisco Enrique Cordova Gonzalez</div>
+		</footer>
+	
+	</body>
+</html>
