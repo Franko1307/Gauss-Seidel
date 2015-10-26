@@ -1,0 +1,56 @@
+header {
+	width:100%;
+ 	float:left;
+	text-align: center;
+	height: 100px;
+	padding-bottom: 3em;
+	color: #FFFFCC;
+	font-family: Comic Sans, Comic Sans MS, cursive;
+}
+#wrapper {
+	width:100%;
+ 	float:left;
+}
+#ERRORES {
+	text-align: center;
+	color: red;
+	font-family: Comic Sans, Comic Sans MS, cursive;
+	font-size: 200%;
+}
+#innertube {
+
+	width: 35%;
+	float:left;
+	border:5px solid #EBE1DA;
+	border-radius: 2em;
+	color: #50EBEC;
+}
+#content {
+	width: 62%;
+	float:right;
+	text-align: left;
+	border:5px solid #EBE1DA;
+	border-radius: 2em;
+	background-image: url("fondocuadriculado.jpg");
+}
+#matrices {
+	float:left;
+	padding-left: 2em;
+	font-size: 100%;
+	width: 30%;
+}
+#vectores {
+	float:right;
+	padding-right: 5em;
+	width:100%;
+}
+#formato {
+	font-size: 200%;
+}
+html {
+
+	background-color:  #4AA02C;
+}
+ul > li {
+	margin-top: 2em;
+}
